@@ -1,0 +1,18 @@
+language: python
+python:
+- 3.8
+- 3.7
+- 3.6
+- 3.5
+install: pip install -U tox-travis
+script: tox
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: j5pu
+  password:
+    secure: B+sbGPUeJqxdDlg0nJSWg+LwoMiZAYsfPK7edpD9YuPnp7FDikY3McTT2jHVP3/fkd78brKkXZrboSEdffeepRXJ/pRvAHLZTpqO6SNi2El/+zQr0o/ZM5JfB7dGiOasUGPM3KeC4zBBm8D6xVUjprOPIvL9UdPZMCmNIVz+BD4tpf17ss6IOC2AiNNTQTIvAx4WF1e0oRsBIB4i/06ChQZjHLnIB8rXkNp8n56VY729gIjmvMKA2iQ80D5NJF3ZuYQsDpY6bbovnVdDWNjAxeS4yIXHDfTlyJueubbC2VYM4Cy53Gq/0NQLnYthtCNc+oDaq1G0OEYcK+T8drJ0VSUkInZnwWuyI0YgZKiJ0pneHJwsAICzWI2HuOkkz6y9iPy7WcgQSj7Tcozsbm8ktCQVDi8lPEewNK2m/KrUq30PLYweijS4LYxLJNV8HXd/g7gITT0wYCziEGgFq8ociCBVh+6wRUTX4DcDhQEqxHYsjuru8xgJtdEQqgLIp8UEte28j5IYwkhtwZMn9NCzRizmPcGklQsH4M0leglOamuOO+Ur6XcK7KbQqMDS0xk/HhEX5juRkgp6Z/YnknQyuaQS6BP0VjtdT0D9kSSk60cSYTYIp8TloHWzxN0XyIexCnGE6LhWVzk2bGgqTou30hSfG6hufGolLskPQTPeC4c=
+  on:
+    tags: true
+    repo: j5pu/secho
+    python: 3.8
