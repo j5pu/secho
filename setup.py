@@ -17,7 +17,7 @@ setup_requirements = [ ]
 test_requirements = [ ]
 
 setup(
-    author="\"José Antonio Puértolas Montañés\"",
+    author='Jose Antonio Puértolas',
     author_email='j5pu@icloud.com',
     python_requires='>=3.5',
     classifiers=[
