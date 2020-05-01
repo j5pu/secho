@@ -17,7 +17,7 @@ setup_requirements = [ ]
 test_requirements = [ ]
 
 setup(
-    author='Jose Antonio Puértolas',
+    author='Jose Antonio Puertolas',
     author_email='j5pu@icloud.com',
     python_requires='>=3.5',
     classifiers=[
@@ -43,6 +43,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/j5pu/secho',
-    version='0.1.0',
+    version='0.1.2',
     zip_safe=False,
 )

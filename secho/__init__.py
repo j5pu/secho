@@ -5,7 +5,7 @@ import click
 
 __author__ = "José Antonio Puértolas Montañés"
 __email__ = 'j5pu@icloud.com'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 
 def black(msg=str(), bold=False, underline=False, blink=False, err=False):
